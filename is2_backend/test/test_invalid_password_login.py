@@ -1,6 +1,6 @@
 
 import pytest
-from ..lib.api.dbAPI import app
+from is2_backend.lib.api.dbAPI import app
 
 @pytest.fixture
 def client():
