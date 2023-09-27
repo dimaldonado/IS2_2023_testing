@@ -1,6 +1,11 @@
 
 import pytest
 from is2_backend.lib.api.dbAPI import app
+import uuid
+
+# Crear un email unico cada test run
+def generate_unique_email():
+    return f"test{uuid.uuid4().hex}@example.com"
 
 #crear un cliente simulado, para realizar solicitudes HTTP a la app flask
 @pytest.fixture
@@ -9,9 +14,11 @@ def client():
         yield client
 
 def test_register_user(client):
+    unique_email = generate_unique_email()
+
     #aumentar numero cada vez que se ejecuta
-    name_test = "TestUser6"
-    email_test = "test6@example.com"
+    name_test = "TestUser"
+    email_test = unique_email
     
     # Simula una solicitud POST para registrar un usuario
     response = client.post('/register', json={
