@@ -1,6 +1,6 @@
 
 import pytest
-from is2_backend.lib.api.dbAPI import app
+from lib.api.dbAPI  import app
 import json 
 
 @pytest.fixture

@@ -1,6 +1,6 @@
 
 import pytest
-from is2_backend.lib.api.dbAPI import app
+from lib.api.dbAPI import app
 
 #crear un cliente simulado, para realizar solicitudes HTTP a la app flask
 @pytest.fixture

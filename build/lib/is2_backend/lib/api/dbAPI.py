@@ -3,7 +3,7 @@ import sys
 import os
 from datetime import timedelta
 from dotenv import load_dotenv
-from is2_backend.lib.api.config import ApplicationConfig
+from config import ApplicationConfig
 from flask_bcrypt import Bcrypt
 from flask_migrate import Migrate
 from data_base.dbmaker import db, User, Developer, Report, Software, Comment, app, Admin, software_dev, Notification, Reassignation
