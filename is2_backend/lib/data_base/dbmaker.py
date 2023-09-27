@@ -4,7 +4,8 @@ from datetime import datetime
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from dataclasses import dataclass
-from api.config import ApplicationConfig
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../api')))
+from config import ApplicationConfig
 from uuid import uuid4
 
 def get_uuid():

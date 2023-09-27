@@ -1,7 +1,9 @@
 
+import sys, os
 import pytest
 import json
-from is2_backend.lib.api.dbAPI import app
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../lib/api')))
+from dbAPI import app
 
 @pytest.fixture
 def client():
@@ -11,7 +13,7 @@ def client():
 def test_login(client):
 
     test_data = {
-        "email": "test6@example.com",
+        "email": "testec2fc5bcd3304d758fa2a3e558b7074c@example.com",
         "password": "testpassword",
     }
 
@@ -21,5 +23,5 @@ def test_login(client):
     data = json.loads(response.data)
 
     assert response.status_code == 200  
-    assert data["name"] == "TestUser6"  
-    assert data["email"] == "test6@example.com"
+    assert data["name"] == "TestUser"  
+    assert data["email"] == "testec2fc5bcd3304d758fa2a3e558b7074c@example.com"

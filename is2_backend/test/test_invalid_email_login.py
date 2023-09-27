@@ -1,7 +1,8 @@
-
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../lib/api')))
 import pytest
 import json
-from is2_backend.lib.api.dbAPI import app
+from dbAPI import app
 
 #crear un cliente simulado, para realizar solicitudes HTTP a la app flask
 @pytest.fixture

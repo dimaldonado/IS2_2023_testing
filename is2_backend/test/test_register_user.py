@@ -1,6 +1,8 @@
 
+import sys, os
 import pytest
-from is2_backend.lib.api.dbAPI import app
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../lib/api')))
+from dbAPI import app
 import uuid
 
 # Crear un email unico cada test run

@@ -4,5 +4,5 @@ import os
 load_dotenv()
 
 class ApplicationConfig:
-    SQLALCHEMY_TACK_MODIFICATIONS=False
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
     SQLALCHEMY_ECHO = True

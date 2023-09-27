@@ -1,6 +1,7 @@
-
+import sys, os
 import pytest
-from is2_backend.lib.api.dbAPI import app
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../lib/api')))
+from dbAPI import app
 import json 
 
 @pytest.fixture
@@ -13,8 +14,8 @@ def client():
 def test_invalid_password_login(client):
     #Test user
     test_user = {
-        "name": "TestUser6",
-        "email": "test6@example.com",
+        "name": "TestUser",
+        "email": "testec2fc5bcd3304d758fa2a3e558b7074c@example.com",
         "password": "testpassword",  
         "type_of_user": "user",
         "id": 1,
