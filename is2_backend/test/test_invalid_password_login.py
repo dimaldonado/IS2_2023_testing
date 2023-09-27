@@ -13,8 +13,8 @@ def client():
 def test_invalid_password_login(client):
     #Test user
     test_user = {
-        "name": "Test User",
-        "email": "test@example.com",
+        "name": "TestUser6",
+        "email": "test6@example.com",
         "password": "testpassword",  
         "type_of_user": "user",
         "id": 1,

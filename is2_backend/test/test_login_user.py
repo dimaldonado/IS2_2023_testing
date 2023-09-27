@@ -11,8 +11,8 @@ def client():
 def test_login(client):
 
     test_data = {
-        "email": "test@example.com",
-        "password": "password123",
+        "email": "test6@example.com",
+        "password": "testpassword",
     }
 
     response = client.post('/login', json=test_data)
@@ -21,5 +21,5 @@ def test_login(client):
     data = json.loads(response.data)
 
     assert response.status_code == 200  
-    assert data["name"] == "Test User"  
-    assert data["email"] == "test@example.com"
+    assert data["name"] == "TestUser6"  
+    assert data["email"] == "test6@example.com"
