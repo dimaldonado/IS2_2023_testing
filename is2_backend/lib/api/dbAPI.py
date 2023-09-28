@@ -3,10 +3,9 @@ import sys
 import os
 from datetime import timedelta
 from dotenv import load_dotenv
-from is2_backend.lib.api.config import ApplicationConfig
+from config import ApplicationConfig
 from flask_bcrypt import Bcrypt
 from flask_migrate import Migrate
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../data_base')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../data_base')))
 from dbmaker import db, User, Developer, Report, Software, Comment, app, Admin, software_dev, Notification, Reassignation
 from flask_cors import CORS,  cross_origin
