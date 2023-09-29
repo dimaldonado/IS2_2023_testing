@@ -184,7 +184,9 @@ def delete_user(email):
         db.session.commit()
         return jsonify({'message': 'Usuario eliminado'})
     else:
-        return jsonify({'message': 'Usuario no encontrado'}, 404)
+        response_data = {'message': 'Usuario no encontrado'}
+        response = make_response(jsonify(response_data), 404)
+        return response
 
 ####################################DEVELOPER###################################
 @app.route('/devs/<id>', methods=['GET' ])
