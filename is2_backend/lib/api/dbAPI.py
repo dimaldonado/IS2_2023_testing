@@ -176,12 +176,15 @@ def update_user(id):
     db.session.commit()
     return jsonify({'message': 'Usuario actualizado'})
 
-@app.route('/users/<email>', methods=['DELETE' ])
+@app.route('/users/<email>', methods=['DELETE'])
 def delete_user(email):
-    user = User.query.filter_by(email).first()
-    db.session.delete(user)
-    db.session.commit()
-    return jsonify({'message': 'Usuario eliminado'})
+    user = User.query.filter_by(email=email).first()
+    if user:
+        db.session.delete(user)
+        db.session.commit()
+        return jsonify({'message': 'Usuario eliminado'})
+    else:
+        return jsonify({'message': 'Usuario no encontrado'}, 404)
 
 ####################################DEVELOPER###################################
 @app.route('/devs/<id>', methods=['GET' ])
