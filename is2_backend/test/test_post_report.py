@@ -15,7 +15,13 @@ def client():
 
 # Unit test to post a report
 def test_post_report(client):
-
+    existing_user = User.query.filter_by(email='john@example.com').first()
+    if existing_user:
+        db.session.delete(existing_user)
+    existing_dev = User.query.filter_by(email='jane@example.com').first()
+    if existing_dev:
+        db.session.delete(existing_dev)
+    db.session.commit()
     #Create user, dev and software for report data
     user = User(name='John Doe', password="password", email='john@example.com', type_of_user='user')
     dev = User(name='Jane Smith', password="password", email='jane@example.com', type_of_user='dev')
