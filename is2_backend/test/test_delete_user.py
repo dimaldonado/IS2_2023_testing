@@ -11,17 +11,17 @@ def client():
 
 def test_delete_user(client):
     # Create a test user
-    test_user = User(name="Test User", email="deleteuser1@test.com", password="password", type_of_user="user")
+    test_user = User(name="Test User", email="deleteuser2@test.com", password="password", type_of_user="user")
 
 
     with app.app_context():
         db.session.add(test_user)
         db.session.commit()
 
-    response = client.delete('/users/deleteuser1@test.com')
+    response = client.delete('/users/deleteuser2@test.com')
 
     assert response.status_code == 200
-    assert User.query.filter_by(email="deleteuser1@test.com").first() is None
+    assert User.query.filter_by(email="deleteuser2@test.com").first() is None
 
     #Verify response
     data = response.get_json()
