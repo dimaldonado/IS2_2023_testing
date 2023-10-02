@@ -7,20 +7,20 @@ En este primera entrega, nos enfocamos en testear el backend utilizando el Frame
 # Instrucciones de testing
 
 ## Pre requerimientos:
-Clonar el proyecto con 'git clone https://github.com/dimaldonado/IS2_2023_testing/edit/main/'
+Clonar el proyecto con `git clone https://github.com/dimaldonado/IS2_2023_testing/edit/main/`
 
 Una vez ubicado en la carpeta raíz del proyecto (IS2_2023_testing), en la terminal ejecutar:
 
 ### Windows:
-'.\IS2_2023_testing\is2_backend\venv\Scripts\activate'
+`.\IS2_2023_testing\is2_backend\venv\Scripts\activate`
 ### MacOS/Linux:
-'. .is2_backend/venv/bin/activate'
+`. .is2_backend/venv/bin/activate`
 
 ## Ejecución de tests:
 
 Teniendo el virtual environment activado, ejecutar lo siguiente:
 ### Windows:
-'pytest .\is2_backend\test'
+`pytest .\is2_backend\test`
 ### MacOS/Linux:
-'pytest .is2_backend/test' 
+`pytest .is2_backend/test`
 
