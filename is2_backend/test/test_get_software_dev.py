@@ -25,46 +25,50 @@ def test_get_software_dev_names():
     # Comparar la respuesta JSON con el resultado esperado
     expected_result = {
         "software_dev": [
-            {
-                "developer_name": "Tersina",
-                "software_name": "CyberSense"
-            },
-            {
-                "developer_name": "Alvin",
-                "software_name": "CyberSense"
-            },
-            {
-                "developer_name": "Arden",
-                "software_name": "CyberSense"
-            },
-            {
-                "developer_name": "Zelma",
-                "software_name": "DataFlow Pro"
-            },
-            {
-                "developer_name": "Joann",
-                "software_name": "InnovaTech"
-            },
-            {
-                "developer_name": "Brande",
-                "software_name": "CodeForge"
-            },
-            {
-                "developer_name": "Kim",
-                "software_name": "TechWave"
-            },
-            {
-                "developer_name": "Walton",
-                "software_name": "DataFlow Pro"
-            },
-            {
-                "developer_name": "Sherye",
-                "software_name": "CodeForge"
-            },
-            {
-                "developer_name": "Francene",
-                "software_name": "CodeForge"
-            }
+        {
+            "developer_name": "Tersina",
+            "software_name": "CyberSense"
+        },
+        {
+            "developer_name": "Alvin",
+            "software_name": "CyberSense"
+        },
+        {
+            "developer_name": "Arden",
+            "software_name": "CyberSense"
+        },
+        {
+            "developer_name": "Zelma",
+            "software_name": "DataFlow Pro"
+        },
+        {
+            "developer_name": "Joann",
+            "software_name": "InnovaTech"
+        },
+        {
+            "developer_name": "Brande",
+            "software_name": "CodeForge"
+        },
+        {
+            "developer_name": "Kim",
+            "software_name": "TechWave"
+        },
+        {
+            "developer_name": "Walton",
+            "software_name": "DataFlow Pro"
+        },
+        {
+            "developer_name": "Sherye",
+            "software_name": "CodeForge"
+        },
+        {
+            "developer_name": "Francene",
+            "software_name": "CodeForge"
+        },
+        {
+            "developer_name": "Tersina",
+            "software_name": "DataFlow Pro"
+        }
         ]
     }
     assert data == expected_result

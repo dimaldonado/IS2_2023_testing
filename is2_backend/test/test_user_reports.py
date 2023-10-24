@@ -26,22 +26,22 @@ def test_get_user_reports():
 
     # Comparar la respuesta JSON con el resultado esperado
     expected_result = [
-        {
-            "date": "Tue, 27 Jun 2023 23:06:43 GMT",
-            "description": "Pulso la X pero no sucede nada, el programa no cierra",
-            "dev_email": None,
-            "dev_id": None,
-            "dev_name": None,
-            "id": 1,
-            "software": 1,
-            "software_name": "CyberSense",
-            "status": "ToDo",
-            "title": "La \"X\" para salir no funciona",
-            "urgency": "1",
-            "user_email": "balliband0@behance.net",
-            "user_id": "d6fe99285b9b45c8849514ca194dac8e",
-            "user_name": "Briana"
-        }
+    {
+        "date": "Tue, 27 Jun 2023 23:06:43 GMT",
+        "description": "Pulso la X pero no sucede nada, el programa no cierra",
+        "dev_email": "tmycock0@opera.com",
+        "dev_id": "32cab0d1b3064ce9ad7bdeeffc8b874b",
+        "dev_name": "Tersina",
+        "id": 1,
+        "software": 1,
+        "software_name": "CyberSense",
+        "status": "Pending",
+        "title": "La \"X\" para salir no funciona",
+        "urgency": "1",
+        "user_email": "balliband0@behance.net",
+        "user_id": "d6fe99285b9b45c8849514ca194dac8e",
+        "user_name": "Briana"
+    }
     ]
 
     assert data == expected_result
