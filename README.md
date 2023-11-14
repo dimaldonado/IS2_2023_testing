@@ -27,6 +27,9 @@ Abrir Cypress utilizando `npx cypress open`
 Una vez abierto cypress la GUI le hará seleccionar entre Component test y E2E tests, seleccionar E2E testing
 ![image](https://github.com/dimaldonado/IS2_2023_testing/assets/28035663/84225e29-ac92-4c58-9dbb-1a20cbd591e8)
 
+A continuación elegir el browser para hacer las pruebas automatizadas (por defecto Chrome) 
+![image](https://github.com/dimaldonado/IS2_2023_testing/assets/28035663/243f29f0-d185-4673-bfb7-d043d2253f0e)
+
 
 Luego en 'Specs' seleccionar cada test para su revisión.
 Los detalles y comentarios de cada test se encuentran en la siguiente ruta del proyecto 'IS2_2023_testing\is2_frontend\cypress\e2e'
