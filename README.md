@@ -11,16 +11,13 @@ Clonar el proyecto con `git clone https://github.com/dimaldonado/IS2_2023_testin
 
 Una vez ubicado en la carpeta raíz del proyecto (IS2_2023_testing), en la terminal ejecutar:
 
-### Windows:
+### Activar ambiente virtual:
 `.\IS2_2023_testing\is2_backend\venv\Scripts\activate`
-### MacOS/Linux:
-`. .is2_backend/venv/bin/activate`
 
 ## Ejecución de tests:
 
 Teniendo el virtual environment activado, ejecutar lo siguiente:
-### Windows:
+
 `pytest .\is2_backend\test`
-### MacOS/Linux:
-`pytest .is2_backend/test`
+
 
