@@ -7,6 +7,7 @@ En este entrega, nos enfocamos en hacer test de aceptación utilizando Cypress.
 # Instrucciones de testing
 
 ## Pre requerimientos (backend y frontend):
+Tener python instalado y como variable de entorno
 Instalar node js ultima versión estable. https://nodejs.org/en
 Clonar el proyecto con `git clone https://github.com/dimaldonado/IS2_2023_testing/edit/main/`
 
