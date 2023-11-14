@@ -7,9 +7,9 @@ En este entrega, nos enfocamos en hacer test de aceptación utilizando Cypress.
 # Instrucciones de testing
 
 ## Pre requerimientos (backend y frontend):
-*Tener python instalado y como variable de entorno
-*Instalar node js ultima versión estable. https://nodejs.org/en
-*Clonar el proyecto con `git clone https://github.com/dimaldonado/IS2_2023_testing/edit/main/`
+* Tener python instalado y como variable de entorno
+* Instalar node js ultima versión estable. https://nodejs.org/en
+* Clonar el proyecto con `git clone https://github.com/dimaldonado/IS2_2023_testing/edit/main/`
 
 ### Activar ambiente virtual:
 Una vez ubicado en la carpeta raíz del proyecto (IS2_2023_testing), en la terminal ejecutar:
@@ -18,10 +18,10 @@ Una vez ubicado en la carpeta raíz del proyecto (IS2_2023_testing), en la termi
 ### Ejecutar API:
 Asumiendo que se encuentra en la carpeta raíz IS2_2023_testing ejecutar `python is2_backend\lib\api\dbAPI.py`
 ## Ejecución de cypress:
-*Abrir otra terminal, en la raíz del proyecto (IS2_2023_testing).
-*Primero que nada ubicarse en la carpeta del frontend utilizando `cd is2_frontend`
-*Instalar dependencias con `npm install`
-*Abrir Cypress utilizando `npx cypress open`
+* Abrir otra terminal, en la raíz del proyecto (IS2_2023_testing).
+* Primero que nada ubicarse en la carpeta del frontend utilizando `cd is2_frontend`
+* Instalar dependencias con `npm install`
+* Abrir Cypress utilizando `npx cypress open`
 
 ## Ejecución de tests:
 Una vez abierto cypress la GUI le hará seleccionar entre Component test y E2E tests, seleccionar E2E testing
