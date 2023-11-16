@@ -28,5 +28,9 @@ describe('Bug assignment function', () => {
     //Admin clicks on the 'Assign' button
     cy.contains('Assign').click();
     // Then the bug ticket should be assigned successfully
+
+    // check that the ticket is assigned to the developer
+    cy.contains('tr', 'La "X" para salir no funciona')
+      .should('contain', 'Tersina'); 
   })
 })
