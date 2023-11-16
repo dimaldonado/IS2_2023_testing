@@ -1,5 +1,5 @@
 /*
-    Acceptance test for bug reporting feature, this is related to the Admin Story 2:  "Como admin quiero ver lista de
+    Acceptance test for ticket assign feature, this is related to the Admin Story 2:  "Como admin quiero ver lista de
     tickets y Asignar el personal para que arregle el bug", for this test to work, the user must be logged in, so we use 
     cy.login command to login and then visit the bug reporting page. Also, there must be a ticket already created, we 
     can use any of those already created in the database.
@@ -34,3 +34,5 @@ describe('Bug assignment function', () => {
       .should('contain', 'Tersina'); 
   })
 })
+
+
