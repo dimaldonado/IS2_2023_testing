@@ -8,7 +8,7 @@
 describe('Bug Reporting Feature', () => {
 
   it('allows the user to report a bug', () => {
-    cy.login('testing@testing','testing');
+    cy.login('dlyte3@usnews.com','WIzWM!t5');
     cy.visit('/my_reports')
     // Click on the 'Reportar un bug' link in the sidebar
     cy.contains('Reportar un bug').click();
