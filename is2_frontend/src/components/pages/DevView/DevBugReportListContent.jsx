@@ -175,7 +175,7 @@ const DevBugReportListContent = ({
       )}
 
       {/*INICIO DE LISTA DE BUGS*/}
-      <div className="container bg-gray">
+      <div className="container bg-gray bug-report-container">
         <div style={{ padding: "0.5rem" }}></div>
         <div className="overflow-auto" style={{ maxHeight: "680px" }}>
           <div className="card-deck overflow-hidden">
@@ -233,7 +233,7 @@ const DevBugReportListContent = ({
                           <select
                             onChange={(event)=> handleStatusChange(event, bugReport)}
                             value={bugReport.status}
-                            className="form-control"
+                            className="form-control select-status"
                           >
                             <option value="ToDo">Abierto</option>
                             <option value="Pending">En progreso</option>

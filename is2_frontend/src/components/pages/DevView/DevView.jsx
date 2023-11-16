@@ -27,7 +27,8 @@ const DevView = () => {
   }, []); 
 
   const handleBugReportClick = (bugReport) => {
-    setSelectedBugId(bugReport.id);
+    const isBugReportSelected = bugReport.id === selectedBugId;
+    setSelectedBugId(isBugReportSelected ? null : bugReport.id);
   };
 
   const accessLevel = 2;
