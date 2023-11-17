@@ -19,13 +19,13 @@ describe('Developer Story 1', () => {
 
     it('allows the developer to change the status of a bug report', () => {
         cy.get('.bg-title-card').first().click();
-    
         // Check if the status dropdown is present
         cy.get('.select-status').first().should('exist');
         // Change the status to Testing
-        cy.get('.select-status').first().select('Testing');
-        cy.get('.bg-title-card').eq(1).click();
-        cy.get('.select-status').first().should('have.value', 'Testing');
+        cy.get('[data-cy=select-status]').first().select('Testing');
+        cy.get('.bg-title-card').first().click();
+        // Check if the status is Testing
+        cy.get('[data-cy=select-status]').first().should('have.value', 'Testing');
     });
 
     // Cleanup: Set the status back to the initial state

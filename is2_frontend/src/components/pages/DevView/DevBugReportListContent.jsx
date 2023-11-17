@@ -230,16 +230,18 @@ const DevBugReportListContent = ({
                         <div
                           className={`text-secondary ${borderColor} rounded`}
                         >
-                          <select
-                            onChange={(event)=> handleStatusChange(event, bugReport)}
-                            value={bugReport.status}
-                            className="form-control select-status"
-                          >
-                            <option value="ToDo">Abierto</option>
-                            <option value="Pending">En progreso</option>
-                            <option value="Closed">Cerrado</option>
-                            <option value="Testing">En testeo</option>
-                          </select>
+                        <select
+                          onChange={(event) => handleStatusChange(event, bugReport)}
+                          value={bugReport.status}
+                          className="form-control select-status"
+                          data-cy="select-status"  // Add a data-cy attribute for easier selection
+                        >
+                          <option value="ToDo">Abierto</option>
+                          <option value="Pending">En progreso</option>
+                          <option value="Closed">Cerrado</option>
+                          <option value="Testing">En testeo</option>
+                        </select>
+
                           <FontAwesomeIcon
                             icon={faChevronDown}
                             className="dropdown-arrow"
