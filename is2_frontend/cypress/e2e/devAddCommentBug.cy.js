@@ -3,6 +3,9 @@
 //Observacion: en el titulo no entra la parte de "como desarrollador debo poder..." por que sino excede la cantidad de caracteres
 //CRITERIO DE ACEPTACION:
 //Una seccion de la vista de desarrollador donde se vean los comentarios de un ticket adyacente a este, junto con la descripcion, el cuerpo de cada uno de los comentarios, titulo y remitente.
+//Ingresar texto vacio a la caja de comentarios:
+//-no se puede, en caso de tener un enter  se puede realizar (FIX)
+//-no se puede ingresar texto sin formato
 
 describe('Developer Story 6', () => {
 
